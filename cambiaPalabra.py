@@ -1,7 +1,10 @@
-original = input ("Introduce original")
-nueva = input ("Introduce nueva")
+import sys
 
-nombreF = "fichero.txt"
+argumentos = sys.argv
+
+nombreF = argumentos[1]
+original = argumentos[2]
+nueva = argumentos[3]
 
 f = open(nombreF, "r")
 
